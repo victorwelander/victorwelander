@@ -54,7 +54,7 @@ const ProjectsPage = () => {
                   >
                     <div className="relative aspect-video w-full overflow-hidden rounded-t-xl">
                       <Image
-                        src={project.image}
+                        src={project.image || "/placeholder.svg"}
                         alt="project-image"
                         className="object-cover"
                         fill
