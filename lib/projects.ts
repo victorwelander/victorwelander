@@ -6,10 +6,12 @@ interface ProjectsProps {
   github?: string;
   link?: string;
   tags: string[];
+  status?: string;
 }
 
 export const PROJECTS: ProjectsProps[] = [
   {
+    status: "active",
     domain: "victorwelander.com",
     image: "/geist.png",
     name: "Victor Welander",
@@ -20,6 +22,7 @@ export const PROJECTS: ProjectsProps[] = [
     tags: ["Next.js", "React", "TypeScript", "Tailwind"],
   },
   {
+    status: "active",
     domain: "geist.vercel.app",
     image: "/geist.png",
     name: "Geist Components",

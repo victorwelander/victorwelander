@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import SocialLinks from "@/components/social-links";
 import { motion } from "framer-motion";
-import { variant } from "@/lib/variants";
+import { container } from "@/lib/variants";
 import ContributionGraph from "@/components/contribution/contribution-graph";
 
 const HomePage = () => {
@@ -22,11 +22,11 @@ const HomePage = () => {
         <h1 className="text-3xl font-medium tracking-tight sm:text-4xl">
           Victor Welander
           <span className="block text-balance text-2xl font-light text-[var(--ds-gray-900)] sm:text-3xl">
-            Web Developer & Design Engineer
+            Web Developer
           </span>
         </h1>
-        <motion.div variants={variant} initial="hidden" animate="show">
-          <div className="text-balance text-[var(--ds-gray-900)]">
+        <motion.div variants={container} initial="hidden" animate="show">
+          <div className="text-[var(--ds-gray-900)]">
             <p className="mt-6 text-[15px]">
               Hi I&apos;m currently working on{" "}
               <Link

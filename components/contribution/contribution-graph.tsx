@@ -36,9 +36,9 @@ const ContributionGraph = () => {
   }
 
   return (
-    <div className="flex flex-col gap-3">
-      <h1 className="text-xl font-medium">Github Contributions</h1>
-      <div className="max-h-fit max-w-fit rounded-xl border border-neutral-300 bg-[var(--ds-background-100)] p-4 dark:border-neutral-800">
+    <div className="flex flex-col gap-1">
+      <h1 className="text-lg font-medium">Github Contributions</h1>
+      <div className="max-h-fit max-w-fit rounded-xl border border-[var(--accents-2)] bg-[var(--ds-background-100)] p-4 dark:border-neutral-800">
         <GitHubCalendar
           username={username}
           theme={github}

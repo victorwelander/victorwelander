@@ -2,45 +2,46 @@
 
 import { Button } from "@/components/ui/button";
 import { PROJECTS } from "@/lib/projects";
-import { variant } from "@/lib/variants";
+import { container } from "@/lib/variants";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const ProjectsPage = () => {
   return (
     <div className="mx-auto mb-6 mt-6 flex max-w-2xl flex-col px-3 py-2">
-      <motion.div variants={variant} initial="hidden" animate="show">
+      <motion.div variants={container} initial="hidden" animate="show">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2">
           {PROJECTS.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col overflow-hidden rounded-xl bg-[#EBEBEB] dark:bg-[#1d1d1d]"
+              className="flex flex-col overflow-hidden rounded-xl bg-[#EBEBEB]"
             >
-              {/*
-            <div className="my-2 flex items-center justify-between px-2">
-              <div className="inline-flex h-[20px] flex-shrink-0 items-center justify-center gap-[4px] whitespace-nowrap rounded-full bg-black px-[8px] text-[11px] font-medium leading-none text-white">
-                {project.domain}
+              <div className="my-2 flex items-center justify-between px-2">
+                {/*
+                <div className="inline-flex h-[20px] flex-shrink-0 items-center justify-center gap-[4px] whitespace-nowrap rounded-full bg-[var(--accents-8)] px-[8px] text-[11px] font-medium leading-none text-white">
+                  {project.domain}
+                </div>
+                */}
+                <div className="inline-flex h-[20px] flex-shrink-0 items-center justify-center gap-[4px] whitespace-nowrap rounded-full text-[13px] font-medium leading-none">
+                  {project.domain}
+                </div>
               </div>
-              <div className="inline-flex h-[20px] flex-shrink-0 items-center justify-center gap-[4px] whitespace-nowrap rounded-full bg-[#367EF8] px-[8px] text-[11px] font-medium leading-none text-white">
-                {project.domain}
-              </div>
-            </div>
-            */}
 
+              {/*
               <div className="relative h-48 w-full flex-shrink-0">
                 <Image
                   src={project.image}
                   alt={`${project.name} preview`}
-                  className="rounded-t-[12px] border border-[var(--accents-2)] object-cover"
+                  className="rounded-t-[12px] border-t border-[var(--accents-2)] object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   fill
                   priority={index < 2}
                 />
               </div>
+              */}
 
-              <div className="mt-auto flex flex-grow flex-col rounded-b-[12px] border border-[var(--accents-2)] bg-white dark:bg-[#1A1A1A]">
+              <div className="mt-auto flex flex-grow flex-col rounded-[12px] border border-[var(--accents-2)] bg-white dark:bg-[#1A1A1A]">
                 <div className="flex-grow px-2 py-2">
                   <h3 className="text-[length:var(--font-small)] font-[600]">
                     {project.name}
@@ -67,7 +68,7 @@ const ProjectsPage = () => {
                       rel="noopener noreferrer"
                       className="mt-auto block w-full flex-1 pb-2"
                     >
-                      <Button className="w-full" shape="full" size="sm">
+                      <Button className="w-full" size="sm">
                         View Live
                       </Button>
                     </Link>
@@ -79,12 +80,7 @@ const ProjectsPage = () => {
                       rel="noopener noreferrer"
                       className="mt-auto block w-full flex-1 pb-2"
                     >
-                      <Button
-                        variant="secondary"
-                        className="w-full"
-                        shape="full"
-                        size="sm"
-                      >
+                      <Button variant="secondary" className="w-full" size="sm">
                         Github
                       </Button>
                     </Link>

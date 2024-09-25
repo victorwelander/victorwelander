@@ -15,7 +15,6 @@ const YearButton = ({ year, currentYear, onClick }: YearButtonProps) => {
       size="sm"
       onClick={onClick}
       variant={isCurrentYear ? "default" : "secondary"}
-      className="border px-4 py-2 text-center"
       title={`View Graph for the year ${year}`}
     >
       {year}

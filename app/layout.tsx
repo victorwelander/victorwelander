@@ -4,8 +4,6 @@ import { GeistMono } from "geist/font/mono";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/theme-provider";
-import SiteHeader from "@/components/site-header";
-import SiteFooter from "@/components/site-footer";
 
 const STORAGE_KEY = "mode";
 
@@ -32,9 +30,7 @@ export default function RootLayout({
             light: "light-theme",
           }}
         >
-          <SiteHeader />
           {children}
-          <SiteFooter />
         </ThemeProvider>
         <Analytics />
       </body>

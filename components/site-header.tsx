@@ -3,12 +3,13 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { SITEHEADER_LINKS } from "@/lib/site-header-links";
 import Image from "next/image";
 import avatar from "@/public/avatar.svg";
 import { ThemeSwitch } from "./theme-switch";
 import MobileNav from "./mobile-nav";
+import Grid from "./grid";
 
 const SiteHeader = () => {
   const pathname = usePathname();
@@ -25,24 +26,26 @@ const SiteHeader = () => {
         />
       </Link>
       <nav className="hidden sm:block">
-        <div className="flex items-center justify-center rounded-full border border-[var(--accents-2)] px-3 shadow-sm backdrop-blur">
-          <div className="flex items-center">
-            {SITEHEADER_LINKS.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                className={cn(
-                  "relative block shrink-0 px-3 py-2 text-sm font-medium",
-                  pathname === link.href
-                    ? "text-[var(--ds-foreground)]"
-                    : "text-[var(--ds-gray-900)] duration-100 hover:text-[var(--ds-foreground)]",
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+        <Grid>
+          <div className="flex items-center justify-center rounded-full p-0.5 backdrop-blur">
+            <div className="flex items-center gap-6">
+              {SITEHEADER_LINKS.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className={cn(
+                    "relative block shrink-0 rounded-full text-sm font-medium",
+                    pathname === link.href
+                      ? "text-[var(--ds-foreground)]"
+                      : "text-[var(--ds-gray-900)] duration-100 hover:text-[var(--ds-foreground)]",
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        </Grid>
       </nav>
       <div className="flex items-center">
         <div className="hidden sm:block">

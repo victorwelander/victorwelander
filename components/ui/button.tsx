@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "rounded-md hover:bg-[var(--geist-foreground)]/80 bg-[var(--geist-foreground)] text-[var(--geist-background)]",
+          "rounded-lg hover:bg-[var(--geist-foreground)]/80 bg-[var(--geist-foreground)] text-[var(--geist-background)]",
         secondary:
-          "rounded-md hover:bg-[var(--accents-2)] border border-[var(--accents-2)] text-[var(--geist-foreground)]",
+          "rounded-lg hover:bg-[var(--accents-2)] border border-[var(--accents-2)] text-[var(--geist-foreground)]",
       },
       size: {
         default: "h-[40px] px-4 py-2",
@@ -22,7 +22,7 @@ const buttonVariants = cva(
         icon: "h-10 w-10",
       },
       shape: {
-        default: "rounded-md",
+        default: "rounded-lg",
         xs: "w-5 h-5 rounded-md",
         sm: "rounded-sm",
         md: "rounded-md",

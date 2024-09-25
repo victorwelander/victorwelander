@@ -40,8 +40,8 @@ export function ThemeSwitch({
       <button
         type="button"
         className={cn(
-          "inline-flex items-center rounded-full border border-[var(--accents-2)] p-[1px]",
-          className
+          "relative inline-flex cursor-pointer items-center rounded-full border border-[var(--accents-2)] p-[1px]",
+          className,
         )}
         aria-label="Toggle Theme"
         {...props}
@@ -56,8 +56,8 @@ export function ThemeSwitch({
     <button
       type="button"
       className={cn(
-        "inline-flex items-center rounded-full border border-[var(--accents-2)] p-[1px]",
-        className
+        "relative inline-flex cursor-pointer items-center rounded-full border border-[var(--accents-2)] p-[1px]",
+        className,
       )}
       data-theme-toggle=""
       aria-label="Toggle Theme"
