@@ -1,25 +1,5 @@
 import { ExternalLink } from "lucide-react";
 import { ReactNode } from "react";
-import {
-  SiCss3,
-  SiExpress,
-  SiFigma,
-  SiFramer,
-  SiGithub,
-  SiJavascript,
-  SiMongodb,
-  SiMongoose,
-  SiMysql,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiOpenai,
-  SiPostgresql,
-  SiPrisma,
-  SiReact,
-  SiTailwindcss,
-  SiTypescript,
-  SiVisualstudiocode,
-} from "react-icons/si";
 
 interface AboutSection {
   title: string;
