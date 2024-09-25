@@ -4,16 +4,7 @@ import React from "react";
 import Link from "next/link";
 import SocialLinks from "@/components/social-links";
 import { motion, Variants } from "framer-motion";
-
-const container: Variants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.05,
-    },
-  },
-};
+import { variant } from "@/lib/variants";
 
 const HomePage = () => {
   return (
@@ -27,8 +18,8 @@ const HomePage = () => {
           </span>
         </h1>
         */}
-        <motion.div variants={container} initial="hidden" animate="show">
-          <div className="text-[var(--ds-gray-900)] text-balance">
+        <motion.div variants={variant} initial="hidden" animate="show">
+          <div className="text-balance text-[var(--ds-gray-900)]">
             <p className="mt-6 text-[15px]">
               Hi <span className="text-xl">👋🏻</span>, I&apos;m currently working
               on{" "}
