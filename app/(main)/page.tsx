@@ -3,8 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import SocialLinks from "@/components/social-links";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { variant } from "@/lib/variants";
+import ContributionGraph from "@/components/contribution/contribution-graph";
 
 const HomePage = () => {
   return (
@@ -39,6 +40,7 @@ const HomePage = () => {
           <div className="mt-3">
             <SocialLinks />
           </div>
+          <ContributionGraph />
         </motion.div>
       </div>
     </div>
