@@ -2,8 +2,6 @@ import { SOCIAL_LINKS } from "@/lib/social-links";
 import Link from "next/link";
 import React from "react";
 
-interface SocialProps {}
-
 const SocialLinks = () => {
   return (
     <div className="flex items-center gap-3">
