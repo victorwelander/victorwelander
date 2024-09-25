@@ -1,6 +1,5 @@
 "use client";
 
-import ContributionGraph from "@/components/contribution/contribution-graph";
 import SocialLinks from "@/components/social-links";
 import { ABOUT } from "@/lib/about";
 import {
