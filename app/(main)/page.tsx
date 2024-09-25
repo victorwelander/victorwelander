@@ -19,11 +19,16 @@ const HomePage = () => {
           </span>
         </h1>
         */}
+        <h1 className="text-3xl font-medium tracking-tight sm:text-4xl">
+          Victor Welander
+          <span className="block text-balance text-2xl font-light text-[var(--ds-gray-900)] sm:text-3xl">
+            Web Developer & Design Engineer
+          </span>
+        </h1>
         <motion.div variants={variant} initial="hidden" animate="show">
           <div className="text-balance text-[var(--ds-gray-900)]">
             <p className="mt-6 text-[15px]">
-              Hi <span className="text-xl">👋🏻</span>, I&apos;m currently working
-              on{" "}
+              Hi I&apos;m currently working on{" "}
               <Link
                 href="https://geist.vercel.app/"
                 target="_blank"
@@ -32,7 +37,8 @@ const HomePage = () => {
               >
                 @Geist
               </Link>
-              , a website with a collection of animated components.
+              , a website with a collection of animated React components made
+              built with Framer motion and CSS.
             </p>
             <p className="mt-3 text-[length:var(--font-small)]"></p>
           </div>
@@ -40,7 +46,9 @@ const HomePage = () => {
           <div className="mt-3">
             <SocialLinks />
           </div>
-          <ContributionGraph />
+          <div className="mt-12">
+            <ContributionGraph />
+          </div>
         </motion.div>
       </div>
     </div>
