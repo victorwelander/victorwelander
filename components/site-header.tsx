@@ -25,7 +25,7 @@ const SiteHeader = () => {
           className="rounded-full"
         />
       </Link>
-      <nav className="hidden sm:block">
+      <nav className="">
         <Grid>
           <div className="flex items-center justify-center rounded-full p-0.5 backdrop-blur">
             <div className="flex items-center gap-6">
