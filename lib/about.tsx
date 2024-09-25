@@ -111,29 +111,4 @@ const ABOUT: AboutSection[] = [
   },
 ];
 
-const TECHSTACK = [
-  { icon: SiNodedotjs, text: "Node.js" },
-  { icon: SiNextdotjs, text: "Next.js" },
-  { icon: SiReact, text: "React" },
-  { icon: SiTypescript, text: "TypeScript" },
-  { icon: SiJavascript, text: "JavaScript" },
-  { icon: SiTailwindcss, text: "Tailwind CSS" },
-  { icon: SiCss3, text: "CSS" },
-  { icon: SiFramer, text: "Framer Motion" },
-  { icon: SiMongodb, text: "MongoDB" },
-  { icon: SiMongoose, text: "Mongoose" },
-  { icon: SiExpress, text: "Express" },
-  { icon: SiPrisma, text: "Prisma" },
-  { icon: SiPostgresql, text: "PostgreSQL" },
-  { icon: SiMysql, text: "MySQL" },
-];
-
-const DESIGN_TOOLS = [{ icon: SiFigma, text: "Figma" }];
-
-const DEVELOPMENT_TOOLS = [
-  { icon: SiVisualstudiocode, text: "Visual Studio Code" },
-  { icon: SiGithub, text: "Github" },
-  { icon: SiOpenai, text: "ChatGPT" },
-];
-
-export { ABOUT, TECHSTACK, DEVELOPMENT_TOOLS };
+export { ABOUT };

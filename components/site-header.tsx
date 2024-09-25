@@ -51,7 +51,6 @@ const SiteHeader = () => {
         <div className="hidden sm:block">
           <ThemeSwitch />
         </div>
-        <MobileNav />
       </div>
     </header>
   );

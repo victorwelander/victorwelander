@@ -21,31 +21,31 @@ import {
 
 const FRAMEWORKS = [
   { icon: SiNextdotjs, text: "Next.js" },
-  { icon: SiReact, text: "React" },
+  { icon: SiReact, text: "React", color: "#58C4DC" },
   { icon: SiExpress, text: "Express" },
 ];
 
 const FRONTEND = [
-  { icon: SiTypescript, text: "TypeScript" },
-  { icon: SiJavascript, text: "JavaScript" },
-  { icon: SiTailwindcss, text: "Tailwind CSS" },
-  { icon: SiCss3, text: "CSS" },
+  { icon: SiTypescript, text: "TypeScript", color: "#2F74C0" },
+  { icon: SiJavascript, text: "JavaScript", color: "#E8D44E" },
+  { icon: SiTailwindcss, text: "Tailwind CSS", color: "#38BDF9" },
+  { icon: SiCss3, text: "CSS", color: "#1B6FB4" },
   { icon: SiFramer, text: "Framer Motion" },
 ];
 
 const BACKEND = [
-  { icon: SiNodedotjs, text: "Node.js" },
-  { icon: SiMongodb, text: "MongoDB" },
-  { icon: SiMongoose, text: "Mongoose" },
-  { icon: SiPrisma, text: "Prisma" },
-  { icon: SiPostgresql, text: "PostgreSQL" },
-  { icon: SiMysql, text: "MySQL" },
+  { icon: SiNodedotjs, text: "Node.js", color: "#519942" },
+  { icon: SiMongodb, text: "MongoDB", color: "#69A745" },
+  { icon: SiMongoose, text: "Mongoose", color: "#F57A00" },
+  { icon: SiPrisma, text: "Prisma", color: "#11384E" },
+  { icon: SiPostgresql, text: "PostgreSQL", color: "#31648C" },
+  { icon: SiMysql, text: "MySQL", color: "#E6900F" },
 ];
 
-const DESIGN_TOOLS = [{ icon: SiFigma, text: "Figma" }];
+const DESIGN_TOOLS = [{ icon: SiFigma, text: "Figma", color: "#9C57F6" }];
 
 const DEVELOPMENT_TOOLS = [
-  { icon: SiVisualstudiocode, text: "Visual Studio Code" },
+  { icon: SiVisualstudiocode, text: "Visual Studio Code", color: "#2AA1F1" },
   { icon: SiGithub, text: "Github" },
   { icon: SiOpenai, text: "ChatGPT" },
 ];
