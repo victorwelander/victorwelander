@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type stateType = {
   value?: string;
   icon?: React.ReactNode;
