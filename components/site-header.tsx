@@ -3,12 +3,11 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useRef, useState } from "react";
+import React from "react";
 import { SITEHEADER_LINKS } from "@/lib/site-header-links";
 import Image from "next/image";
 import avatar from "@/public/avatar.svg";
 import { ThemeSwitch } from "./theme-switch";
-import MobileNav from "./mobile-nav";
 import Grid from "./grid";
 
 const SiteHeader = () => {
