@@ -37,9 +37,9 @@ const ContributionGraph = () => {
 
   return (
     <div className="flex flex-col gap-1">
-      <div className="rounded-2xl border border-[rgb(247,247,248)] bg-[rgb(250,250,251)] p-2">
+      <div className="rounded-2xl border border-[rgb(247,247,248)] bg-[rgb(250,250,251)] p-2 dark:border-neutral-900 dark:bg-black/30">
         <h1 className="text-[16px] font-[550]">Github Contributions</h1>
-        <div className="max-h-fit max-w-fit overflow-hidden rounded-xl border border-black/5 bg-white bg-clip-padding p-4 shadow-[0px_1px_2px_-1px] shadow-black/5">
+        <div className="max-h-fit max-w-fit overflow-hidden rounded-xl border border-black/5 bg-white bg-clip-padding p-4 shadow-[0px_1px_2px_-1px] shadow-black/5 dark:border-white/5 dark:bg-black">
           <GitHubCalendar
             username={username}
             theme={github}

@@ -24,17 +24,17 @@ const SiteHeader = () => {
         />
       </Link>
       <nav className="">
-        <div className="flex items-center justify-center rounded-full p-0.5 backdrop-blur">
+        <div className="flex items-center justify-center rounded-full border p-0.5 backdrop-blur">
           <div className="flex items-center gap-3">
             {SITEHEADER_LINKS.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
                 className={cn(
-                  "relative block shrink-0 rounded-full px-4 py-1.5 text-sm font-[550] transition-colors duration-150 ease-in-out hover:bg-[#f7f7f6]",
+                  "relative block shrink-0 rounded-full px-4 py-1.5 text-sm font-[550]",
                   pathname === link.href
-                    ? "text-[var(--ds-foreground)]"
-                    : "text-[var(--ds-gray-900)] duration-100 hover:text-[var(--ds-foreground)]",
+                    ? "bg-black text-[var(--geist-background)]"
+                    : "text-[var(--ds-gray-900)] transition-colors duration-150 ease-in-out hover:bg-[#f7f7f6] hover:text-[var(--ds-foreground)]",
                 )}
               >
                 {link.label}
