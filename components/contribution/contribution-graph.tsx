@@ -37,27 +37,29 @@ const ContributionGraph = () => {
 
   return (
     <div className="flex flex-col gap-1">
-      <h1 className="text-lg font-medium">Github Contributions</h1>
-      <div className="max-h-fit max-w-fit rounded-xl border border-[var(--accents-2)] bg-[var(--ds-background-100)] p-4 dark:border-neutral-800">
-        <GitHubCalendar
-          username={username}
-          theme={github}
-          colorScheme={serverTheme}
-          blockSize={13}
-          year={calendarYear}
-        />
-      </div>
-      <div className="flex justify-start gap-2">
-        {years.slice(0, 5).map((year) => (
-          <YearButton
-            key={year}
-            year={year}
-            currentYear={calendarYear ?? today}
-            onClick={() =>
-              setCalendarYear(year === calendarYear ? undefined : year)
-            }
+      <div className="rounded-2xl border border-[rgb(247,247,248)] bg-[rgb(250,250,251)] p-2">
+        <h1 className="text-[16px] font-[550]">Github Contributions</h1>
+        <div className="max-h-fit max-w-fit overflow-hidden rounded-xl border border-black/5 bg-white bg-clip-padding p-4 shadow-[0px_1px_2px_-1px] shadow-black/5">
+          <GitHubCalendar
+            username={username}
+            theme={github}
+            colorScheme={serverTheme}
+            blockSize={13}
+            year={calendarYear}
           />
-        ))}
+        </div>
+        <div className="mt-1 flex justify-start gap-2">
+          {years.slice(0, 5).map((year) => (
+            <YearButton
+              key={year}
+              year={year}
+              currentYear={calendarYear ?? today}
+              onClick={() =>
+                setCalendarYear(year === calendarYear ? undefined : year)
+              }
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

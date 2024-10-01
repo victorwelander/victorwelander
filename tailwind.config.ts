@@ -3,7 +3,11 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   mode: "jit",
   darkMode: ["class", ".dark-theme"],
-  content: ["./**/*.{ts,tsx}"],
+  content: [
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     extend: {},
   },

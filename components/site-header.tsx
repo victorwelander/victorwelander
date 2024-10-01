@@ -8,7 +8,6 @@ import { SITEHEADER_LINKS } from "@/lib/site-header-links";
 import Image from "next/image";
 import avatar from "@/public/avatar.svg";
 import { ThemeSwitch } from "./theme-switch";
-import Grid from "./grid";
 
 const SiteHeader = () => {
   const pathname = usePathname();
@@ -25,26 +24,24 @@ const SiteHeader = () => {
         />
       </Link>
       <nav className="">
-        <Grid>
-          <div className="flex items-center justify-center rounded-full p-0.5 backdrop-blur">
-            <div className="flex items-center gap-6">
-              {SITEHEADER_LINKS.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  className={cn(
-                    "relative block shrink-0 rounded-full text-sm font-medium",
-                    pathname === link.href
-                      ? "text-[var(--ds-foreground)]"
-                      : "text-[var(--ds-gray-900)] duration-100 hover:text-[var(--ds-foreground)]",
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+        <div className="flex items-center justify-center rounded-full p-0.5 backdrop-blur">
+          <div className="flex items-center gap-3">
+            {SITEHEADER_LINKS.map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className={cn(
+                  "relative block shrink-0 rounded-full px-4 py-1.5 text-sm font-[550] transition-colors duration-150 ease-in-out hover:bg-[#f7f7f6]",
+                  pathname === link.href
+                    ? "text-[var(--ds-foreground)]"
+                    : "text-[var(--ds-gray-900)] duration-100 hover:text-[var(--ds-foreground)]",
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
-        </Grid>
+        </div>
       </nav>
       <div className="flex items-center">
         <div className="hidden sm:block">

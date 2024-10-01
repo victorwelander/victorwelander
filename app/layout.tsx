@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Nunito } from "next/font/google";
+import Attention from "@/components/attention";
 
 const STORAGE_KEY = "mode";
+
+const font = Nunito({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Victor Welander",
@@ -19,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`${font.className}`}>
         <ThemeProvider
           storageKey={STORAGE_KEY}
           attribute="class"
@@ -33,7 +39,12 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <Analytics />
+        <Attention />
       </body>
     </html>
   );
 }
+
+/* 
+      <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
+*/
