@@ -6,6 +6,7 @@ import SocialLinks from "@/components/social-links";
 import { motion } from "framer-motion";
 import { container } from "@/lib/variants";
 import ContributionGraph from "@/components/contribution/contribution-graph";
+import SocialBlocks from "@/components/social-blocks";
 
 const HomePage = () => {
   return (
@@ -43,10 +44,9 @@ const HomePage = () => {
             <p className="mt-3 text-[length:var(--font-small)]"></p>
           </div>
 
-          <div className="mt-3">
-            <SocialLinks />
-          </div>
-          <div className="mt-12">
+          <SocialBlocks />
+
+          <div className="mt-6">
             <ContributionGraph />
           </div>
         </motion.div>
