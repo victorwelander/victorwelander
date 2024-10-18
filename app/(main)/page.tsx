@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import SocialLinks from "@/components/social-links";
 import { motion } from "framer-motion";
 import { container } from "@/lib/variants";
 import ContributionGraph from "@/components/contribution/contribution-graph";
