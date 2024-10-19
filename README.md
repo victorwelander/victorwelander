@@ -1,5 +1,5 @@
 <p>
-  Hi, I'm <a href="https://www.victorwelander.com" target="_blank" rel="nofollow noreferrer">Victor Welander</a>. I'm a fullstack developer trying to become a design engineering working with detailed interactions and UI/UX. You can see my work at <a href="https://geist.vercel.app" target="_blank" rel="nofollow noreferrer">Geist</a>
+  Hi, I'm <a href="https://www.victorwelander.com" target="_blank" rel="nofollow noreferrer">Victor Welander</a>. I'm a fullstack developer practicing to become a design engineer working with detailed and animated interactions and UI/UX. You can see my work at <a href="https://geist.vercel.app" target="_blank" rel="nofollow noreferrer">Geist</a>
 </p>
 
 #### Frameworks and Technologies I use.
