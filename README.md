@@ -6,6 +6,6 @@
 
 <img src="https://skillicons.dev/icons?i=next,react,typescript,javascript,css,tailwindcss" />
 
-## Projects
-- <a href="https://geist.vercel.app" target="_blank">Geist</a>
+### Projects
+- <a href="https://geist.vercel.app" target="_blank">Geist</a> : Collection of animated React components
 - <a href="https://www.victorwelander.com" target="_blank">Victor Welander</a>
