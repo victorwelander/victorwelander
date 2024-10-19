@@ -8,7 +8,7 @@ import { SiNextdotjs, SiVercel } from "react-icons/si";
 const SiteFooter = () => {
   return (
     <footer className="mt-32 flex-none">
-      <div className="mx-auto flex max-w-2xl flex-col px-3 pb-16 pt-10">
+      <div className="mx-auto flex max-w-2xl flex-col px-6 pb-16 pt-10">
         <div className="border-[0.5px] border-[var(--accents-2)]" />
         <div className="mb-4 mt-6 flex flex-wrap gap-x-6 gap-y-1 text-sm font-medium">
           {SITEHEADER_LINKS.map((link, index) => (
