@@ -4,7 +4,6 @@ import { SITEHEADER_LINKS } from "@/lib/site-header-links";
 import Link from "next/link";
 import React from "react";
 import { SiNextdotjs, SiVercel } from "react-icons/si";
-import { ThemeSwitch } from "./theme-switch";
 
 const SiteFooter = () => {
   return (
