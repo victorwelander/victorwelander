@@ -5,3 +5,7 @@
 ## Frameworks and Technologies I use.
 
 <img src="https://skillicons.dev/icons?i=next,react,typescript,javascript,css,tailwindcss" />
+
+## Projects
+- <a href="https://geist.vercel.app" target="_blank">Geist</a>
+- <a href="https://www.victorwelander.com" target="_blank">Victor Welander</a>
