@@ -16,7 +16,7 @@ export default function Component() {
         Web Developer
       </p>
       <div className="mt-6">
-        <p className="text-[length:var(--font-small)] font-[500] text-[var(--ds-gray-900)]">
+        <p className="text-[length:var(--font-small)] font-[450] text-[var(--ds-gray-900)]">
           Hi I&apos;m currently working on{" "}
           <Link
             href="https://geist.vercel.app/"
@@ -82,16 +82,10 @@ export default function Component() {
                     </Link>
                   )}
                   {project.link && (
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[var(--ds-gray-900)] hover:text-[var(--geist-foreground)]"
-                      onClick={(e) => e.stopPropagation()}
-                    >
+                    <div className="text-[var(--ds-gray-900)] hover:text-[var(--geist-foreground)]">
                       <ExternalLink className="size-4" />
                       <span className="sr-only">External Link</span>
-                    </Link>
+                    </div>
                   )}
                 </div>
               </div>
