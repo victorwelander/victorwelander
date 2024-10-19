@@ -37,7 +37,6 @@ const SiteFooter = () => {
               Deployed on <SiVercel className="inline size-4" />
             </Link>
             <div className="grow" />
-            <ThemeSwitch />
           </div>
         </div>
       </div>

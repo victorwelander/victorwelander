@@ -1,6 +1,5 @@
 "use client";
 
-import SocialLinks from "@/components/social-links";
 import { ABOUT } from "@/lib/about";
 import {
   BACKEND,
@@ -27,7 +26,6 @@ const AboutPage = () => {
             </h1>
             <p className="mt-1 text-sm">Web Developer</p>
           </div>
-          <SocialLinks />
         </motion.header>
 
         <motion.section variants={item} className="group/item relative mt-6">

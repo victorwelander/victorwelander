@@ -1,27 +1,16 @@
 interface ProjectsProps {
-  name: string;
+  title?: string;
   description: string;
-  image?: string;
+  logo?: string;
   github?: string;
   link?: string;
-  tags: string[];
 }
 
 export const PROJECTS: ProjectsProps[] = [
   {
-    name: "Victor Welander",
     description:
-      "My personal portfolio showcasing my projects and read about me.",
-    link: "https://www.victorwelander.com/",
-    github: "https://github.com/victorwelander/victorwelander",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
-  },
-  {
-    image: "/geist.png",
-    name: "Geist Components",
-    description:
-      "Collection of Animated React components made with Framer motion and CSS.",
-    link: "https://geist.vercel.app/",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind", "MongoDB", "Mongoose"],
+      "Geist is a collection of animated React components built with Framer motion and CSS.",
+    logo: "https://geist.vercel.app/icons/geist-logo-light.svg",
+    link: "https://geist.vercel.app",
   },
 ];
