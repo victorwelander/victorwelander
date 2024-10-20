@@ -11,4 +11,4 @@
 - <a href="https://www.victorwelander.com" target="_blank" rel="nofollow noreferrer">Victor Welander</a>
 
 #### Follow me on
-- <a href="https://x.com/victorwelander_" target="_blank" rel="nofollow noreferrer">X Twitter</a>
+- <a href="https://x.com/victorwelander_" target="_blank" rel="nofollow noreferrer">X (Twitter)</a>
